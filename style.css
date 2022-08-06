@@ -166,3 +166,130 @@ body {
   height: 20px;
   border-radius: 10px;
 }
+
+@media (max-width: 1000px) {
+  /** Startscreen **/
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-container {
+    background-size: 150px;
+    width: 200px;
+    height: 200px;
+    margin: -40px;
+  }
+
+  .girlatTable-img {
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+  }
+
+  .h1-Quiztime {
+    font-size: 30px;
+    color: rgb(255, 222, 89);
+  }
+
+  .h2-txt {
+    margin-top: -2px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 251, 144);
+  }
+  .Startscreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn-start {
+    text-align: center;
+    border-radius: 100px;
+    height: 50px;
+    width: 180px;
+    background-color: rgb(255, 222, 89);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(16, 170, 67);
+    font-size: 22px;
+  }
+
+  /** QUIZ **/
+  .quiz-answer-card {
+    text-align: center;
+    border-radius: 100px;
+    height: 35px;
+    width: 310px;
+    background-color: rgb(37, 109, 77);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 222, 89);
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .question-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(255, 222, 89);
+  }
+
+  .question-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 8px;
+    color: aliceblue;
+    font-size: 22px;
+    margin-top: 18px;
+  }
+
+  .question-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin: 8px;
+    color: aliceblue;
+    font-size: 12px;
+    margin-top: 18px;
+  }
+
+  .rightContainer {
+    margin-top: 12px;
+  }
+
+  .btn {
+    background-color: rgb(16, 182, 110);
+    border-radius: 8px;
+    text-align: center;
+    border-radius: 100px;
+    height: 30px;
+    width: 160px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Fredoka One";
+    font-size: 18px;
+  }
+}
