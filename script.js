@@ -23,7 +23,7 @@ let questions = [
     answer_2: "&lt;iframe&gt;",
     answer_3: "&lt;frame&gt;",
     answer_4: "J&lt;iframe&gt;, &lt;frame;",
-    right_answer: 3,
+    right_answer: 2,
   },
   {
     question: "Welches Attribut kann man NICHT für Textarea verwenden?",

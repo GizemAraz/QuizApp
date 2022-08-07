@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-        <meta charset="UTF-8" />
-         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>QUIZAPP</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="script.js"></script>
-
-        <link href="https://fonts.googleapis.com/css?family=Fredoka One" rel="stylesheet"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUIZAPP</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka One"
+      rel="stylesheet"
+    />
   </head>
 
   <body onload="init()">
-        <div class="main-container" id="questionBody">
-
-           <div class="left-container"> 
-                <h1 class="question-txt" id="questiontext">Frage</h1>
-
-
-                <div class="progress">
-                <div
-                class="progress-bar"
-                id="progress-bar"
-                role="progressbar"
-                style="width: 20%"
-                    >
-                     25%
-                </div>
-             </div>
-         </div>
+    <div class="main-container" id="questionBody">
+      <div class="left-container">
+        <h1 class="question-txt" id="questiontext">Frage</h1>
+      </div>
 
       <div class="right-container">
         <div class="quiz-answer-card card mb-2" onclick="answer('answer_1')">
@@ -57,10 +46,13 @@
               onclick="nextQuestion()"
               class="btn btn-primary"
               id="next-button"
-              disabled>
+              disabled
+            >
               Nächste Frage
             </button>
-        
-        </div> 
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
