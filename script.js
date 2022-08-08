@@ -1,6 +1,6 @@
 let questions = [
   {
-    question: "Wer hat HTML erfunden?",
+    question: "Wer hat<br> HTML erfunden?",
     answer_1: "Robbie Williams",
     answer_2: "Lady Gaga",
     answer_3: "Tim Berners - Lee",
@@ -9,7 +9,7 @@ let questions = [
   },
 
   {
-    question: "Was bedeutet das HTML Tag &lt;a&gt;?",
+    question: "Was bedeutet das<br> HTML Tag &lt;a&gt;?",
     answer_1: "Text Fett",
     answer_2: "Container",
     answer_3: "Ein Link",
@@ -44,11 +44,31 @@ let questions = [
 
   {
     question:
-      "Wie nennt man den Teilbereich der Informatik, der untersucht wie natürliche Sprache mit dem Computer verarbeitet werden kann?",
-    answer_1: "natürliche Linguistikinformatik",
-    answer_2: "informatische Linguistik",
-    answer_3: "Sprachinformatik",
-    answer_4: "Computerlinguistik",
+      "Wofür steht denn eigentlich RAM?",
+    answer_1: "Linguistikinformatik",
+    answer_2: "Real Access Memory",
+    answer_3: "Random Access Memory",
+    answer_4: "Read And More",
+    right_answer: 3,
+  },
+
+  {
+    question:
+      "Was bedeutet CPU?",
+    answer_1: "Credit Power Union",
+    answer_2: "Central Processing Unit",
+    answer_3: "Circular Print Unit",
+    answer_4: "Circular Power Union",
+    right_answer: 2,
+  },
+
+  {
+    question:
+    "Was ist eine IP-Adresse?",
+    answer_1: "Ein Druckerprotokoll",
+    answer_2: "Eine Microsoft Applikation",
+    answer_3: "Eine Netzwerkadresse",
+    answer_4: "Inner Peace",
     right_answer: 3,
   },
 ];
@@ -72,12 +92,6 @@ function showQuestion() {
       rightQuestions++;
     document.getElementById("header-image").src = "img/tropy.png";
   } else {
-    let percent = (currentQuestion + 1) / questions.length;
-    percent = Math.round(percent * 100);
-    document.getElementById("progress-bar").innerHTML = `${percent} %`;
-    document.getElementById("progress-bar").style`width = ${percent}%;`;
-    console.log("Fortschritt:", percent);
-
     let question = questions[currentQuestion];
 
     document.getElementById("question-number").innerHTML = currentQuestion + 1;
@@ -88,6 +102,14 @@ function showQuestion() {
     document.getElementById("answer_2").innerHTML = question["answer_2"];
     document.getElementById("answer_3").innerHTML = question["answer_3"];
     document.getElementById("answer_4").innerHTML = question["answer_4"];
+
+    let percent = (currentQuestion + 1) / questions.question.length;
+    percent = Math.round(percent * 100);
+    document.getElementById("progress-bar").innerHTML = `${percent} %`;
+    document.getElementById("progress-bar").style`width = ${percent}%;`;
+    console.log("Fortschritt:", percent);
+
+
   }
 }
 
@@ -131,4 +153,13 @@ function resetAnswerButtons() {
   document.getElementById("answer_3").parentNode.classList.remove("bg-success");
   document.getElementById("answer_4").parentNode.classList.remove("bg-danger");
   document.getElementById("answer_4").parentNode.classList.remove("bg-success");
+}
+
+
+function restartGame(){
+  document.getElementById("questionBody").style = "";
+  document.getElementById("endScreen").style = "display: none";
+  rightQuestions = 0;
+  currentQuestion = 0;
+  init();
 }

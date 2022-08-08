@@ -14,9 +14,28 @@
   </head>
 
   <body onload="init()">
-    <div class="main-container" id="questionBody">
+
+    <div class="card-body Score" id="endScreen" style="display: none;"> 
+      <h1 class="h1"> COMPLETE <br> HTML QUIZ </h1><br> 
+      <h2 class="h2">YOUR SCORE <b id="amountOfrightQuestions">XX</b> / <b id="amountOfQuestions">XX</b> <br> </h2> 
+      <button onclick="restartGame()" class="btn-replay">REPLAY</button>
+    </div>
+
+    <div class="main-container" class="container" id="questionBody">
+
+
       <div class="left-container">
         <h1 class="question-txt" id="questiontext">Frage</h1>
+        <div class ="progress" style="display: none;">
+          <div
+            class="progress-bar"
+            id="progress-bar"
+            role="progressbar"
+            style="width: 20%"
+          >
+            25%
+          </div>
+        </div>
       </div>
 
       <div class="right-container">

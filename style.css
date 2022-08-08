@@ -22,6 +22,11 @@ body {
   justify-content: center;
   background-position: center;
   flex-direction: column;
+  margin: 22px;
+}
+
+.right-container{
+  margin: 22px;
 }
 
 .greenCircles-img {
@@ -79,6 +84,43 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+.h1{
+ 
+  font-size: 55px;
+  color: rgb(255, 222, 89);
+  margin: 0px;
+}
+
+.h2{
+  margin: 0px;
+}
+
+.btn-replay{
+
+text-align: center;
+border-radius: 100px;
+height: 50px;
+width: 180px;
+background-color: rgb(255,251,144);
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+color: rgb(16,182,110);
+font-size: 22px;
+font-family: "Fredoka One";
+border: none;
+}
+
+.btn-replay a {
+  text-decoration: none;
+}
+
+.btn-replay:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
 /** QUIZ **/
 
 .question-txt {
@@ -86,13 +128,13 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 60px;
-  color: rgb(255, 222, 89);
+  font-size: 50px;
+  color: rgb(217,217,217);
 }
 
 .card-title {
   font-size: 70px;
-  color: rgb(255, 222, 89);
+  color:  rgb(217,217,217);
   object-fit: cover;
   width: 580px;
   height: 580px;
@@ -119,8 +161,8 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: rgb(255, 222, 89);
-  font-size: 42px;
+  color: rgb(217,217,217);
+  font-size: 32px;
   margin: 5px;
 }
 
@@ -153,7 +195,7 @@ body {
 }
 
 .progress-bar {
-  background-color: rgb(255, 251, 144);
+  background-color: rgb(150, 149, 127);
   border-radius: 100px;
   color: rgb(16, 80, 52);
   /* (height of inner div) / 2 + padding */
@@ -181,6 +223,23 @@ body {
 .bg-danger {
   color: rgb(255, 87, 87);
 }
+
+
+.Score{
+  background-image: url("img/grüneKreise.png");
+  background-size: 550px;
+  height: 600px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  text-align: center  ;
+  color: rgb(163, 162, 147);
+  font-size: 22px;
+  flex-direction: column;
+}
+
 @media (max-width: 1000px) {
   /** Startscreen **/
 
@@ -237,6 +296,10 @@ body {
     font-size: 22px;
   }
 
+  .right-container {
+    margin: 0px;
+  }
+
   /** QUIZ **/
   .quiz-answer-card {
     text-align: center;
@@ -248,18 +311,18 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: rgb(255, 222, 89);
     font-size: 18px;
     margin: 5px;
   }
+
 
   .question-txt {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 30px;
-    color: rgb(255, 222, 89);
+    font-size: 20px;
+   
   }
 
   .question-footer {
@@ -269,7 +332,7 @@ body {
     justify-content: space-between;
     text-align: center;
     margin: 8px;
-    color: aliceblue;
+   
     font-size: 22px;
     margin-top: 18px;
   }
@@ -282,7 +345,7 @@ body {
     flex-direction: column;
     text-align: center;
     margin: 8px;
-    color: aliceblue;
+    
     font-size: 12px;
     margin-top: 18px;
   }
@@ -298,7 +361,7 @@ body {
     border-radius: 100px;
     height: 30px;
     width: 16git0px;
-    color: aliceblue;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -307,3 +370,4 @@ body {
     font-size: 18px;
   }
 }
+
