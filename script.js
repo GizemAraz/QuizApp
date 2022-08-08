@@ -72,7 +72,7 @@ function showQuestion() {
       rightQuestions++;
     document.getElementById("header-image").src = "img/tropy.png";
   } else {
-    let percent = (currentQuestion + 1) / question.length;
+    let percent = (currentQuestion + 1) / questions.length;
     percent = Math.round(percent * 100);
     document.getElementById("progress-bar").innerHTML = `${percent} %`;
     document.getElementById("progress-bar").style`width = ${percent}%;`;

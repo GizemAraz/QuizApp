@@ -76,6 +76,7 @@ body {
 
 .btn-start:hover {
   transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 }
 
 /** QUIZ **/
@@ -167,6 +168,19 @@ body {
   border-radius: 10px;
 }
 
+.quiz-answer-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.bg-success {
+  color: rgb(16, 182, 110);
+}
+
+.bg-danger {
+  color: rgb(255, 87, 87);
+}
 @media (max-width: 1000px) {
   /** Startscreen **/
 
@@ -180,7 +194,7 @@ body {
     background-size: 150px;
     width: 200px;
     height: 200px;
-    margin: -40px;
+    margin: -20px;
   }
 
   .girlatTable-img {
