@@ -129,12 +129,12 @@ border: none;
   align-items: center;
   text-align: center;
   font-size: 50px;
-  color: rgb(217,217,217);
+  color: rgb(255, 222, 89)
 }
 
 .card-title {
   font-size: 70px;
-  color:  rgb(217,217,217);
+  color:  rgb(255, 251, 144);
   object-fit: cover;
   width: 580px;
   height: 580px;
@@ -161,7 +161,7 @@ border: none;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: rgb(217,217,217);
+  color: rgb(255, 251, 144);
   font-size: 32px;
   margin: 5px;
 }
@@ -195,20 +195,14 @@ border: none;
 }
 
 .progress-bar {
-  background-color: rgb(150, 149, 127);
+  background-color: rgb(41,99,73);
   border-radius: 100px;
   color: rgb(16, 80, 52);
   /* (height of inner div) / 2 + padding */
   padding: 3px;
 }
 
-.progress-bar > div {
-  background-color: orange;
-  width: 40%;
-  /* Adjust with JavaScript */
-  height: 20px;
-  border-radius: 10px;
-}
+
 
 .quiz-answer-card:hover {
   cursor: pointer;

@@ -84,6 +84,7 @@ function init() {
 }
 
 function showQuestion() {
+  
   if (currentQuestion >= questions.length) {
     document.getElementById("endScreen").style = "";
     document.getElementById("questionBody").style = "display: none";
@@ -103,11 +104,12 @@ function showQuestion() {
     document.getElementById("answer_3").innerHTML = question["answer_3"];
     document.getElementById("answer_4").innerHTML = question["answer_4"];
 
-    let percent = (currentQuestion + 1) / questions.question.length;
-    percent = Math.round(percent * 100);
-    document.getElementById("progress-bar").innerHTML = `${percent} %`;
-    document.getElementById("progress-bar").style`width = ${percent}%;`;
-    console.log("Fortschritt:", percent);
+    let percent = currentQuestion/ questions.length ;
+    percent = percent * 100; 
+    document.getElementById('progress-bar').innerHTML = `${percent}%`;
+    document.getElementById('progress-bar').style = `width: ${percent}%;`;
+    console.log('Fortschritt:', percent);
+   
 
 
   }
@@ -158,7 +160,7 @@ function resetAnswerButtons() {
 
 function restartGame(){
   document.getElementById("questionBody").style = "";
-  document.getElementById("endScreen").style = "display: none";
+  document.getElementById("endScreen").style = "display: none" ;
   rightQuestions = 0;
   currentQuestion = 0;
   init();
